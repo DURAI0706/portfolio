@@ -21,19 +21,19 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="relative z-10 py-20 px-6 bg-white/5">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-mono font-bold text-center mb-16">
-          Technical <span className="cyber-blue">Skills</span>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
+          Technical <span className="text-red-500">Skills</span>
         </h2>
-        
-        {/* Tabbed Navigation */}
-        <div className="flex flex-wrap justify-center mb-12 bg-black/30 rounded-xl p-2 backdrop-blur-sm border border-white/10">
+
+        {/* Tab Navigation */}
+        <div className="flex flex-wrap justify-center mb-12 backdrop-blur-sm">
           {skillTabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 mx-1 mb-2 ${
+              className={`px-6 py-3 text-2xl font-bold rounded-lg transition-all duration-300 mx-1 mb-2 ${
                 activeTab === tab.id
-                  ? 'bg-[hsl(var(--cyber-blue))] text-white'
+                  ? 'text-blue-400 hover:text-blue-600'
                   : 'text-purple-400 hover:text-purple-600'
               }`}
             >
@@ -42,14 +42,14 @@ export default function SkillsSection() {
             </button>
           ))}
         </div>
-        
-        {/* Skills Content */}
+
+        {/* Skills Grid */}
         <div ref={elementRef} className="min-h-[400px]">
-          <SkillContent 
+          <SkillContent
             key={`${activeTab}-${Date.now()}`}
-            category={activeTab} 
-            skills={SKILLS[activeTab]} 
-            animate={true}
+            category={activeTab}
+            skills={SKILLS[activeTab]}
+            animate={isIntersecting}
           />
         </div>
       </div>
@@ -57,11 +57,11 @@ export default function SkillsSection() {
   );
 }
 
-function SkillContent({ 
-  category, 
-  skills, 
-  animate 
-}: { 
+function SkillContent({
+  category,
+  skills,
+  animate
+}: {
   category: SkillCategory;
   skills: typeof SKILLS[SkillCategory];
   animate: boolean;
@@ -76,30 +76,36 @@ function SkillContent({
     }
   };
 
-  const getColor = (category: SkillCategory) => {
+  const getGradient = (category: SkillCategory) => {
     switch (category) {
-      case 'programming': return 'cyber-blue';
-      case 'frontend': return 'cyber-purple';
-      case 'backend': return 'success-green';
-      case 'ml': return 'cyber-purple';
-      default: return 'cyber-blue';
+      case 'programming': return ['from-cyan-400', 'to-blue-500'];
+      case 'frontend': return ['from-pink-400', 'to-purple-500'];
+      case 'backend': return ['from-green-400', 'to-lime-500'];
+      case 'ml': return ['from-yellow-400', 'to-pink-500'];
+      default: return ['from-cyan-400', 'to-purple-400'];
     }
   };
+
+  const [from, to] = getGradient(category);
 
   return (
     <div className="grid md:grid-cols-2 gap-12 items-start">
       <div className="space-y-4">
         {skills.map((skill, index) => (
-          <SkillBar 
-            key={skill.name} 
-            skill={skill} 
-            animate={animate} 
+          <SkillBar
+            key={skill.name}
+            skill={skill}
+            animate={animate}
             delay={index * 300 + 500}
+            from={from}
+            to={to}
           />
         ))}
       </div>
       <div className="flex items-center justify-center h-full">
-        <div className={`text-8xl ${getColor(category)} animate-float opacity-20 hover:opacity-100 transition-opacity duration-500`}>
+        <div
+          className={`text-8xl bg-gradient-to-r ${from} ${to} bg-clip-text text-transparent animate-float`}
+        >
           <i className={getIcon(category)}></i>
         </div>
       </div>
@@ -107,14 +113,18 @@ function SkillContent({
   );
 }
 
-function SkillBar({ 
-  skill, 
-  animate, 
-  delay 
-}: { 
+function SkillBar({
+  skill,
+  animate,
+  delay,
+  from,
+  to
+}: {
   skill: { name: string; level: number };
   animate: boolean;
   delay: number;
+  from: string;
+  to: string;
 }) {
   const [currentWidth, setCurrentWidth] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -129,7 +139,6 @@ function SkillBar({
     }
   }, [animate, skill.level, delay, hasAnimated]);
 
-  // Reset animation when switching tabs
   useEffect(() => {
     setCurrentWidth(0);
     setHasAnimated(false);
@@ -137,22 +146,22 @@ function SkillBar({
 
   return (
     <div className="mb-6">
-      <div className="flex justify-between mb-3">
-        <span className="font-semibold text-white">{skill.name}</span>
+      <div className="flex justify-between mb-2">
+        <span className={`font-semibold bg-gradient-to-r ${from} ${to} bg-clip-text text-transparent`}>
+          {skill.name}
+        </span>
         <span className="text-cyan-400 font-mono font-bold">{skill.level}%</span>
       </div>
-      <div className="w-full bg-gray-800 rounded-full h-3 shadow-inner">
-        <div 
-          className="h-3 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 shadow-lg transition-all duration-2000 ease-out relative overflow-hidden"
-          style={{ 
-            width: `${currentWidth}%`,
-            background: 'linear-gradient(90deg, #00bcd4 0%, #9c27b0 100%)'
-          }}
-        >
-          {currentWidth > 0 && (
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
-          )}
-        </div>
+      <div
+        className="h-3 rounded-full shadow-lg transition-all duration-2000 ease-out relative overflow-hidden"
+        style={{
+          width: `${currentWidth}%`,
+          background: 'linear-gradient(90deg, #00bcd4 0%, #9c27b0 100%)'
+        }}
+      >
+        {currentWidth > 0 && (
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+        )}
       </div>
     </div>
   );
