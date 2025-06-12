@@ -1,0 +1,124 @@
+NAME	: Duraisamy R
+REG NO	: 21S006
+DEGREE	: 5 Year Integrated M.Sc(Data Science)
+EMAIL   : duraisamyr0706@gmail.com 
+PROFESSIONAL OBJECTIVE
+Aspiring data science professional eager to contribute my strong analytical skills, hands-on project experience, and continuous learning attitude to a dynamic organization. Committed to overcoming academic challenges and leveraging practical knowledge to deliver meaningful solutions. Seeking opportunities to grow, develop new skills, and add value while building a successful career path.
+
+CLASS/COURSE|NAME OF THE INSTITUTION|BOARD OF STUDY|YEAR OF PASSING|MARKS / CGPA %
+MSc  Data science (Pursuing)|Thiagarajar college of Engineering, Madurai|Anna University|2024|6.44*
+XII|Mahatma Montessori School CBSE,Madurai.|CBSE|2021|76.4%				
+X|Mahatma Montessori School CBSE,Madurai.|CBSE|2019|69.4%		
+* CGPA (out of 10) up to 7th semester
+
+Technical Expertise
+•Programming Languages: Python, C++, Java (Basics)
+•Front-end Technologies: HTML, CSS
+•Back-end Technologies & Databases: MySQL, Flask, MongoDB
+
+Areas of Interest
+•Predictive Analysis
+•Web Technology
+•Machine Learning
+ 
+Personal Skills
+•✅ Highly Motivated & Responsible – Committed to delivering quality work with a strong sense of ownership and accountability.
+•🔄 Multitasking & Decision-Making – Able to manage multiple responsibilities efficiently while making clear, confident decisions under pressure.
+•🗣️ Leadership & Communication – Strong leadership abilities paired with clear and effective communication in both team and individual settings.
+•🤝 Teamwork – Collaborative team player who values cooperation, shared goals, and building a positive work environment.
+
+MINI-PROJECTS & INTERNSHIP:
+1. Fetch, Decode, and Execute Cycle
+Duration: Sep 2022 – Nov 2022 (2 months)
+Description:
+Simulated the core operations of a CPU's instruction cycle using low-level logic. Focused on the practical understanding of how instructions are fetched from memory, decoded, and executed within a simplified architecture, enhancing my knowledge of computer organization and microprocessor fundamentals.
+2. Car Rental Website Using PHP
+Duration: Feb 2023 – Apr 2023 (2 months)
+Description:
+Built a dynamic car rental platform using PHP, HTML, CSS, and MySQL. Implemented functionalities such as user authentication, real-time booking, vehicle catalog management, and admin controls. Emphasized responsive UI design and backend logic for seamless user interaction and data handling.
+3. Predicting Workplace Stress Levels Using Machine Learning and HR Data Analysis
+Duration: Feb 2023 – Apr 2023 (2 months)
+Description:
+Developed a machine learning model to analyze HR data and predict employee stress levels. Utilized algorithms like Random Forest and SVM to identify key stress indicators. Enabled actionable insights for HR decision-making, with visual dashboards to interpret model outputs effectively.
+4. Educational Website with Gamified Learning Level Prediction
+Duration: Dec 2023 – Apr 2024 (3 months)
+Description:
+Created an interactive educational website that gamifies learning experiences. Integrated a learning level prediction model to provide personalized content based on user performance. Focused on increasing student engagement through visual feedback, quizzes, and adaptive difficulty settings.
+5. Customer Churn Prediction
+Duration: Jun 2024 – Jul 2024 (1 month)
+Description:
+Built a predictive model using logistic regression and ensemble techniques to identify customers at risk of leaving a service. Conducted feature engineering and exploratory data analysis on real-world customer data. Helped businesses proactively reduce churn and improve customer retention strategies.
+6. Sales Analytics Dashboard for Bakery (Bun Butter Jam)
+Duration: Feb 2025 – Apr 2025 (2 months)
+Description:
+Designed and deployed an interactive Streamlit-based dashboard for a local bakery, “Bun Butter Jam.” Integrated data visualizations with Plotly and used Pandas for dynamic filtering, sales trend analysis, and product performance tracking. Enhanced business decision-making by providing insights on daily sales, product popularity, and seasonal trends, all within an intuitive multi-tab interface.
+7. Reinforcement Learning Simulator (RL Learning Simulator)
+Duration: Feb 2025 – Jun 2025 (4 months)
+Description:
+Developed a custom Reinforcement Learning simulator to visualize agent-environment interactions for educational and experimentation purposes. Implemented the environment and training logic from scratch. Created a Flask-based web interface to simulate various learning strategies, enabling real-time adjustments and Monte Carlo-style experimentation for algorithm evaluation.
+
+List of Internships:
+1. Handwritten Digit Recognition
+Duration: Oct 2022 – Nov 2022 (1 month)
+Organization: Corizo, Bengaluru
+Status: ✅ Completed
+Description:
+Completed a hands-on internship focused on building a digit recognition system using machine learning. Worked with the MNIST dataset and implemented models using Python and scikit-learn. Gained practical experience in data preprocessing, feature extraction, and model evaluation using accuracy, confusion matrix, and precision-recall metrics.
+2. Text-to-SQL using Retrieval-Augmented Generation (RAG) & Large Language Models (LLM)
+Duration: Jun 2024 – Dec 2024 (6 months)
+Organization: COATS, Madurai
+Status: ✅ Completed
+Description:
+Contributed to a cutting-edge project that translated natural language queries into SQL using Retrieval-Augmented Generation and LLMs (like OpenAI/GPT models). Implemented context-aware retrieval pipelines, fine-tuned prompt engineering techniques, and designed evaluation methods for SQL correctness and query efficiency. Developed a functional interface that bridged human-language inputs with structured database queries.
+
+CO-CURRICULAR ACTIVITIES:
+•🎯 “HACK-CIDENTS” – National Level Hackathon, IIT Madras
+Participated and cleared the Pre-final round in the prestigious hackathon organized by IIT Madras, showcasing innovative problem-solving and collaboration skills.
+•📄 “Yugam 2023” – Paper Presentation
+Presented an original research idea during Yugam 2023, a technical fest held during the 2nd year of college, gaining valuable academic exposure and feedback.
+•💡 “ITECH Hack Fest 2023” – PSG ITech
+Successfully cleared the Pre-final round of this National level hackathon conducted by PSG ITech, demonstrating creative thinking in real-world problem-solving.
+•📚 Machine Learning Workshop – PSG Coimbatore
+Attended a two-day intensive workshop on Machine Learning held on October 29th and 31st, 2022, gaining hands-on exposure to core ML concepts and tools.
+•✅ AI for Everyone: Master the Basics – edX
+Completed an introductory course on Artificial Intelligence fundamentals through edX, developing a solid understanding of AI’s applications and societal impact.
+•🧠 Machine Learning Basics – Corizo
+Completed a beginner-level course in Machine Learning under the guidance of Corizo, laying the foundation for more advanced ML projects and internships.
+
+Extra-Curricular Activities
+•🎨 Member – TCE Visual Arts Club
+Actively involved in creative initiatives and represented the club at NIT Trichy’s FESTEMBER (October), showcasing talents in visual storytelling and design.
+•🎭 Participant – Kalai Circus 3.0 (2022), Madurai
+Contributed to this vibrant cultural fest, gaining exposure to diverse artistic expressions and stage performances.
+•🎬 Participant – Pathivugal 2023 Short Film Contest, PSG Coimbatore
+Participated in a short film contest that encouraged cinematic creativity and teamwork, refining skills in scripting, direction, and visual storytelling.
+
+Hobbies & Interests
+•📸 Photography – Passionate about capturing candid moments, nature, and artistic perspectives through the lens.
+•✍️ Script Writing – Enjoy crafting engaging narratives and dialogue, especially for short films and creative storytelling.
+•🎮 Gaming – Love exploring immersive gameplay and strategy-based games that challenge problem-solving skills.
+•🌍 Travel – Enthusiastic about discovering new places, cultures, and experiences that broaden creative inspiration.
+
+CONTACT ADDRESS	ADDRESS
+C/o. The Placement Officer	Duraisamy R
+Thiagarajar College of Engineering	Plot no 80 Sambakulam, 
+Madurai-625 015.	Swamy Vivekanandha Nagar,
+Ph. 0452- 2482240/41	Madurai,
+Email: placement@tce.edu	Tamilnadu – 625007.
+Ph: +919443487229
+Email: duraisamyr0706@gmail.com 
+
+DATE OF BIRTH	:	07-06-2003	AGE: 22	SEX: MALE 
+FATHER’S NAME	:	RAMANIKANTH D		
+MOTHER TONGUE	:	TAMIL		
+LANGUAGES KNOWN	: English (Read, Write, Speak)
+Tamil (Read, Write, Speak)
+LINKEDIN                         :  https://www.linkedin.com/in/duraisamy-r070603/
+GITHUB                           :  https://github.com/DURAI0706
+medium                           :  https://medium.com/@duraisamyr0706
+
+for above profile design a portfolio in the below mentioned style
+Create a dynamic, interactive fresher portfolio website using Node.js with Express for the backend and either React (with Vite or Next.js) or EJS for the frontend templating. The website should have a sleek black background with a smooth gradient animation (such as a shifting dark blue–purple–black blend), giving it a modern, tech-savvy aesthetic that reflects a coding personality. The homepage should feature a typing animation that introduces the user (Duraisamy R) with key highlights like "Aspiring Data Scientist | Python & ML Enthusiast | Creative Thinker". Sections should include About Me, Skills, Projects, Internships, Resume Viewer, and Contact Form (using EmailJS or Nodemailer).
+The standout feature should be the auto-updating social feed integration: fetch the latest GitHub repositories (via GitHub API), Medium blog posts (via RSS feed), and optionally LinkedIn activity (via scraping APIs or RSS proxy). Schedule this fetching with node-cron to refresh the content every few hours or use real-time webhooks when available. Use MongoDB or a JSON store to cache this content for performance.
+Styling should be done using Tailwind CSS, and the UI must be fully responsive across devices with smooth transitions, tabbed navigation for skills/projects, and animated counters showing project count, blogs written, etc. Use Framer Motion or GSAP to animate components for an engaging experience. In the footer, prominently link to LinkedIn, GitHub, and Medium, with logos and hover animations. Optionally, include a theme switcher (dark/cyberpunk/hacker green) and a command-line style intro like npx duraisamy-portfolio for geek appeal.
+The final result should be a live, portfolio-as-a-service that updates itself whenever you post a blog, push a GitHub repo, or update your profiles — showcasing your journey as a modern, well-rounded data science graduate.

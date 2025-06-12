@@ -1,0 +1,66 @@
+MINI-PROJECTS & INTERNSHIP:
+
+1. Fetch, Decode, and Execute Cycle
+Duration: Sep 2022 – Nov 2022 (2 months)
+Description:
+Simulated the core operations of a CPU's instruction cycle using low-level logic. Focused on the practical understanding of how instructions are fetched from memory, decoded, and executed within a simplified architecture, enhancing my knowledge of computer organization and microprocessor fundamentals.
+Link: https://github.com/DURAI0706/Fetch-decode-execute-cycle
+
+2. Car Rental Website Using PHP
+Duration: Feb 2023 – Apr 2023 (2 months)
+Description:
+Built a dynamic car rental platform using PHP, HTML, CSS, and MySQL. Implemented functionalities such as user authentication, real-time booking, vehicle catalog management, and admin controls. Emphasized responsive UI design and backend logic for seamless user interaction and data handling.
+Link: https://github.com/DURAI0706/carrental-in-php
+
+3. Predicting Workplace Stress Levels Using Machine Learning and HR Data Analysis
+Duration: Feb 2023 – Apr 2023 (2 months)
+Description:
+Developed a machine learning model to analyze HR data and predict employee stress levels. Utilized algorithms like Random Forest and SVM to identify key stress indicators. Enabled actionable insights for HR decision-making, with visual dashboards to interpret model outputs effectively.
+Link: https://github.com/DURAI0706/Predicting-Workplace-Stress-Levels-Using-Machine-Learning-and-HR-Data-Analysis
+
+4. Educational Website with Gamified Learning Level Prediction
+Duration: Dec 2023 – Apr 2024 (3 months)
+Description:
+Created an interactive educational website that gamifies learning experiences. Integrated a learning level prediction model to provide personalized content based on user performance. Focused on increasing student engagement through visual feedback, quizzes, and adaptive difficulty settings.
+Link: https://github.com/DURAI0706/TLB-TCE
+
+5. Customer Churn Prediction
+Duration: Jun 2024 – Jul 2024 (1 month)
+Description:
+Built a predictive model using logistic regression and ensemble techniques to identify customers at risk of leaving a service. Conducted feature engineering and exploratory data analysis on real-world customer data. Helped businesses proactively reduce churn and improve customer retention strategies.
+Link: https://github.com/DURAI0706/telecom_churn_prediction_site
+
+6. Sales Analytics Dashboard for Bakery (Bun Butter Jam)
+Duration: Feb 2025 – Apr 2025 (2 months)
+Description:
+Designed and deployed an interactive Streamlit-based dashboard for a local bakery, “Bun Butter Jam.” Integrated data visualizations with Plotly and used Pandas for dynamic filtering, sales trend analysis, and product performance tracking. Enhanced business decision-making by providing insights on daily sales, product popularity, and seasonal trends, all within an intuitive multi-tab interface.
+Link: https://github.com/DURAI0706/Bun-Butter-Jam-
+
+7. Top3Buzz
+Duration: Feb 2025 (2 months)
+Description:
+Top3Buzz is a real-time, multi-device buzzer system that captures the first three responses in a game-show or quiz format — all wrapped in a vibrant retro gaming style UI. Perfect for team-based competitions, college fests, and interactive events, this system brings nostalgic arcade aesthetics with modern web interactivity.
+Link: https://github.com/DURAI0706/Top3Buzz
+
+8. Reinforcement Learning Simulator (RL Learning Simulator)
+Duration: Feb 2025 – Jun 2025 (4 months)
+Description:
+Developed a custom Reinforcement Learning simulator to visualize agent-environment interactions for educational and experimentation purposes. Implemented the environment and training logic from scratch. Created a Flask-based web interface to simulate various learning strategies, enabling real-time adjustments and Monte Carlo-style experimentation for algorithm evaluation.
+Link: will be updated soon
+
+List of Internships:
+1. Handwritten Digit Recognition
+Duration: Oct 2022 – Nov 2022 (1 month)
+Organization: Corizo, Bengaluru
+Status: ✅ Completed
+Description:
+Completed a hands-on internship focused on building a digit recognition system using machine learning. Worked with the MNIST dataset and implemented models using Python and scikit-learn. Gained practical experience in data preprocessing, feature extraction, and model evaluation using accuracy, confusion matrix, and precision-recall metrics.
+Link: https://github.com/DURAI0706/Handwritten-Digit-Recognition
+
+2. Text-to-SQL using Retrieval-Augmented Generation (RAG) & Large Language Models (LLM)
+Duration: Jun 2024 – Dec 2024 (6 months)
+Organization: COATS, Madurai
+Status: ✅ Completed
+Description:
+Contributed to a cutting-edge project that translated natural language queries into SQL using Retrieval-Augmented Generation and LLMs (like OpenAI/GPT models). Implemented context-aware retrieval pipelines, fine-tuned prompt engineering techniques, and designed evaluation methods for SQL correctness and query efficiency. Developed a functional interface that bridged human-language inputs with structured database queries.
+Link:will be updated soon
