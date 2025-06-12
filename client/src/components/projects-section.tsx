@@ -70,7 +70,15 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
         <div className={`text-3xl ${getColorClass(project.color)} mb-3`}>
           <i className={project.icon}></i>
         </div>
-        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+        <div className="flex items-center mb-2">
+          <h3 className="text-xl font-semibold">{project.title}</h3>
+          <button 
+            onClick={viewGithub} 
+            className="ml-2 text-gray-400 hover:text-white transition-colors"
+          >
+            <i className="fab fa-github"></i>
+          </button>
+        </div>
         <p className="text-gray-400 text-sm mb-3">{project.period}</p>
         <p className="text-gray-300 text-sm leading-relaxed">
           {project.description}
@@ -85,20 +93,6 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
             {tech}
           </span>
         ))}
-      </div>
-      <div className="flex space-x-3">
-        <button 
-          onClick={viewProject}
-          className="cyber-blue hover:text-cyan-400 transition-colors"
-        >
-          <i className="fas fa-external-link-alt"></i>
-        </button>
-        <button 
-          onClick={viewGithub}
-          className="text-gray-400 hover:text-white transition-colors"
-        >
-          <i className="fab fa-github"></i>
-        </button>
       </div>
     </div>
   );
