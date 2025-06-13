@@ -24,12 +24,12 @@ export default function ContactSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
-
+      
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.error || 'Failed to send message');
       }
-
+      
       return response.json();
     },
     onSuccess: () => {
@@ -61,73 +61,84 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative z-10 py-20 px-6 bg-muted/30">
+    <section id="contact" className="relative z-10 py-20 px-6 bg-white/5">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-          Get In Touch
+        <h2 className="text-4xl md:text-5xl font-mono font-bold text-center mb-16">
+          Get In <span className="cyber-blue">Touch</span>
         </h2>
-
+        
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="space-y-6 text-blue-900">
+          <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-8">Let's Connect</h3>
-
-            <div className="space-y-5">
-              {[
-                {
-                  icon: 'fas fa-envelope',
-                  label: 'Email',
-                  value: PERSONAL_INFO.email
-                },
-                {
-                  icon: 'fas fa-phone',
-                  label: 'Phone',
-                  value: PERSONAL_INFO.phone
-                },
-                {
-                  icon: 'fas fa-map-marker-alt',
-                  label: 'Location',
-                  value: PERSONAL_INFO.location
-                }
-              ].map((info, idx) => (
-                <div key={idx} className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-white/40 border border-white/60 shadow-inner rounded-lg flex items-center justify-center text-blue-700">
-                    <i className={`${info.icon} text-lg`}></i>
-                  </div>
-                  <div>
-                    <p className="font-semibold">{info.label}</p>
-                    <p className="text-blue-700">{info.value}</p>
-                  </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-[hsl(var(--cyber-blue))]/20 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-envelope cyber-blue"></i>
                 </div>
-              ))}
+                <div>
+                  <p className="font-semibold">Email</p>
+                  <p className="text-gray-400">{PERSONAL_INFO.email}</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-[hsl(var(--cyber-blue))]/20 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-phone cyber-blue"></i>
+                </div>
+                <div>
+                  <p className="font-semibold">Phone</p>
+                  <p className="text-gray-400">{PERSONAL_INFO.phone}</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-[hsl(var(--cyber-blue))]/20 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-map-marker-alt cyber-blue"></i>
+                </div>
+                <div>
+                  <p className="font-semibold">Location</p>
+                  <p className="text-gray-400">{PERSONAL_INFO.location}</p>
+                </div>
+              </div>
             </div>
-
+            
             {/* Social Links */}
             <div className="pt-8">
               <h4 className="font-semibold mb-4">Follow Me</h4>
               <div className="flex space-x-4">
-                {[
-                  { href: PERSONAL_INFO.github, icon: 'fab fa-github' },
-                  { href: PERSONAL_INFO.linkedin, icon: 'fab fa-linkedin' },
-                  { href: PERSONAL_INFO.medium, icon: 'fab fa-medium' }
-                ].map((link, idx) => (
-                  <a
-                    key={idx}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white/40 border border-white/60 rounded-lg flex items-center justify-center hover:bg-cyan-300/30 text-blue-800 hover:text-blue-900 transition-all duration-300"
-                  >
-                    <i className={`${link.icon} text-xl`}></i>
-                  </a>
-                ))}
+                <a 
+                  href={PERSONAL_INFO.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[hsl(var(--cyber-blue))]/20 hover:text-[hsl(var(--cyber-blue))] transition-all duration-300"
+                >
+                  <i className="fab fa-github text-xl"></i>
+                </a>
+                <a 
+                  href={PERSONAL_INFO.linkedin} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[hsl(var(--cyber-blue))]/20 hover:text-[hsl(var(--cyber-blue))] transition-all duration-300"
+                >
+                  <i className="fab fa-linkedin text-xl"></i>
+                </a>
+                <a 
+                  href={PERSONAL_INFO.medium} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[hsl(var(--cyber-blue))]/20 hover:text-[hsl(var(--cyber-blue))] transition-all duration-300"
+                >
+                  <i className="fab fa-medium text-xl"></i>
+                </a>
               </div>
             </div>
           </div>
-
+          
           {/* Contact Form */}
-          <div className="bg-white/40 backdrop-blur-lg shadow-xl border border-white/60 rounded-xl p-8">
-            <form onSubmit={handleSubmit} className="space-y-6 text-blue-900">
+          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-semibold mb-2">Name</label>
                 <Input
@@ -137,10 +148,10 @@ export default function ContactSection() {
                   onChange={handleChange}
                   placeholder="Your name"
                   required
-                  className="w-full px-4 py-3 bg-white/60 text-blue-900 placeholder:text-blue-500 border border-white/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:border-[hsl(var(--cyber-blue))] focus:outline-none transition-colors text-white placeholder:text-gray-400"
                 />
               </div>
-
+              
               <div>
                 <label className="block text-sm font-semibold mb-2">Email</label>
                 <Input
@@ -148,12 +159,12 @@ export default function ContactSection() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="you@example.com"
+                  placeholder="your.email@example.com"
                   required
-                  className="w-full px-4 py-3 bg-white/60 text-blue-900 placeholder:text-blue-500 border border-white/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:border-[hsl(var(--cyber-blue))] focus:outline-none transition-colors text-white placeholder:text-gray-400"
                 />
               </div>
-
+              
               <div>
                 <label className="block text-sm font-semibold mb-2">Subject</label>
                 <Input
@@ -161,12 +172,12 @@ export default function ContactSection() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Collaboration"
+                  placeholder="Project collaboration"
                   required
-                  className="w-full px-4 py-3 bg-white/60 text-blue-900 placeholder:text-blue-500 border border-white/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:border-[hsl(var(--cyber-blue))] focus:outline-none transition-colors text-white placeholder:text-gray-400"
                 />
               </div>
-
+              
               <div>
                 <label className="block text-sm font-semibold mb-2">Message</label>
                 <Textarea
@@ -174,16 +185,16 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about your project or opportunity..."
                   required
-                  className="w-full px-4 py-3 bg-white/60 text-blue-900 placeholder:text-blue-500 border border-white/50 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-cyan-300"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:border-[hsl(var(--cyber-blue))] focus:outline-none transition-colors resize-none text-white placeholder:text-gray-400"
                 />
               </div>
-
-              <Button
-                type="submit"
+              
+              <Button 
+                type="submit" 
                 disabled={contactMutation.isPending}
-                className="w-full px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-all duration-300 disabled:opacity-50"
+                className="w-full px-6 py-3 bg-[hsl(var(--cyber-blue))] text-white font-semibold rounded-lg hover:bg-cyan-400 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 {contactMutation.isPending ? 'Sending...' : 'Send Message'}
               </Button>

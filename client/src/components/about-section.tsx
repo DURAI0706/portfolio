@@ -6,35 +6,35 @@ export default function AboutSection() {
   const { elementRef, isIntersecting } = useIntersectionObserver<HTMLDivElement>();
 
   return (
-    <section id="about" className="relative z-10 py-20 px-6 bg-muted/30">
+    <section id="about" className="relative z-10 py-20 px-6">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
-          About <span className="professional-blue">Me</span>
+        <h2 className="text-4xl md:text-5xl font-mono font-bold text-center mb-16">
+          About <span className="cyber-blue">Me</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold professional-navy">Professional Overview</h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <h3 className="text-2xl font-semibold cyber-purple">Professional Objective</h3>
+            <p className="text-gray-300 leading-relaxed">
               {PERSONAL_INFO.objective}
             </p>
             
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <i className="fas fa-graduation-cap professional-blue"></i>
-                <span className="text-foreground">{PERSONAL_INFO.education}</span>
+                <i className="fas fa-graduation-cap cyber-blue"></i>
+                <span>{PERSONAL_INFO.education}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <i className="fas fa-map-marker-alt professional-blue"></i>
-                <span className="text-foreground">{PERSONAL_INFO.location}</span>
+                <i className="fas fa-map-marker-alt cyber-blue"></i>
+                <span>{PERSONAL_INFO.location}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <i className="fas fa-calendar-alt professional-blue"></i>
-                <span className="text-foreground">Age: {PERSONAL_INFO.age}</span>
+                <i className="fas fa-calendar-alt cyber-blue"></i>
+                <span>Age: {PERSONAL_INFO.age}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <i className="fas fa-language professional-blue"></i>
-                <span className="text-foreground">{PERSONAL_INFO.languages.join(', ')}</span>
+                <i className="fas fa-language cyber-blue"></i>
+                <span>{PERSONAL_INFO.languages.join(', ')}</span>
               </div>
             </div>
           </div>
@@ -53,20 +53,20 @@ export default function AboutSection() {
         
         {/* Hobbies & Interests Section */}
         <div className="mt-20">
-          <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Hobbies & <span className="professional-navy">Interests</span>
+          <h3 className="text-3xl font-mono font-bold text-center mb-12">
+            Hobbies & <span className="cyber-purple">Interests</span>
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {PERSONAL_INFO.hobbies.map((hobby, index) => (
               <div 
                 key={index}
-                className="professional-card group p-6 transition-all duration-300 text-center hover:scale-105"
+                className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[hsl(var(--cyber-purple))]/50 transition-all duration-300 text-center"
               >
-                <div className="text-3xl professional-navy mb-3 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl cyber-purple mb-3 group-hover:scale-110 transition-transform duration-300">
                   <i className={hobby.icon}></i>
                 </div>
-                <h4 className="font-semibold mb-2 text-foreground">{hobby.name}</h4>
-                <p className="text-sm text-muted-foreground">{hobby.description}</p>
+                <h4 className="font-semibold mb-2">{hobby.name}</h4>
+                <p className="text-sm text-gray-400">{hobby.description}</p>
               </div>
             ))}
           </div>
@@ -85,11 +85,11 @@ function StatCard({ stat, trigger }: { stat: typeof STATS[0], trigger: boolean }
   );
 
   return (
-    <div className="professional-card text-center p-6 transition-all duration-300 hover:scale-105">
-      <div className="text-3xl font-bold professional-blue mb-2">
+    <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[hsl(var(--cyber-blue))]/50 transition-all duration-300">
+      <div className="text-3xl font-mono font-bold cyber-blue mb-2">
         {animatedValue}{stat.suffix}
       </div>
-      <div className="text-sm text-muted-foreground">{stat.label}</div>
+      <div className="text-sm text-gray-400">{stat.label}</div>
     </div>
   );
 }

@@ -4,55 +4,53 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(210, 40%, 15%);
-  --muted: hsl(210, 15%, 97%);
-  --muted-foreground: hsl(210, 20%, 45%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(210, 40%, 15%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(210, 40%, 15%);
-  --border: hsl(210, 20%, 90%);
-  --input: hsl(210, 20%, 95%);
-  --primary: hsl(210, 100%, 50%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(210, 20%, 96%);
-  --secondary-foreground: hsl(210, 40%, 15%);
-  --accent: hsl(210, 20%, 94%);
-  --accent-foreground: hsl(210, 40%, 15%);
-  --destructive: hsl(0, 70%, 55%);
-  --destructive-foreground: hsl(0, 0%, 100%);
-  --ring: hsl(210, 100%, 50%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(197, 100%, 50%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* Professional portfolio colors */
-  --professional-blue: hsl(210, 100%, 50%);
-  --professional-navy: hsl(210, 100%, 20%);
-  --professional-gray: hsl(210, 15%, 50%);
-  --professional-red: hsl(0, 83%, 18%);
-  --success-green: hsl(142, 76%, 36%);
-  --accent-gold: hsl(45, 100%, 50%);
+  /* Custom portfolio colors */
+  --cyber-blue: hsl(197, 100%, 50%);
+  --cyber-purple: hsl(266, 85%, 76%);
+  --success-green: hsl(150, 100%, 50%);
+  --error-red: hsl(0, 100%, 69%);
 }
 
 .dark {
-  --background: hsl(210, 30%, 8%);
-  --foreground: hsl(0, 0%, 95%);
-  --muted: hsl(210, 30%, 12%);
-  --muted-foreground: hsl(210, 15%, 65%);
-  --popover: hsl(210, 30%, 8%);
-  --popover-foreground: hsl(0, 0%, 95%);
-  --card: hsl(210, 30%, 10%);
-  --card-foreground: hsl(0, 0%, 95%);
-  --border: hsl(210, 20%, 18%);
-  --input: hsl(210, 20%, 15%);
-  --primary: hsl(210, 100%, 50%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(210, 20%, 15%);
-  --secondary-foreground: hsl(0, 0%, 95%);
-  --accent: hsl(210, 20%, 16%);
-  --accent-foreground: hsl(0, 0%, 95%);
-  --destructive: hsl(0, 70%, 55%);
-  --destructive-foreground: hsl(0, 0%, 100%);
-  --ring: hsl(210, 100%, 50%);
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(197, 100%, 50%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
 }
 
@@ -62,7 +60,7 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground overflow-x-hidden;
+    @apply font-sans antialiased bg-black text-white overflow-x-hidden;
   }
 
   html {
@@ -71,38 +69,26 @@
 }
 
 @layer components {
-  .professional-gradient {
-    background: linear-gradient(135deg, hsl(210, 100%, 96%), hsl(210, 100%, 92%), hsl(210, 50%, 90%));
+  .animated-gradient {
+    background: linear-gradient(-45deg, #0f172a, #581c87, #1e1b4b, #0f172a);
     background-size: 400% 400%;
-    animation: subtle-gradient 20s ease infinite;
+    animation: gradient 15s ease infinite;
   }
 
-  .dark .professional-gradient {
-    background: linear-gradient(135deg, hsl(210, 30%, 12%), hsl(210, 40%, 15%), hsl(210, 30%, 18%));
+  .cyber-blue {
+    color: var(--cyber-blue);
   }
 
-  .professional-blue {
-    color: var(--professional-blue);
-  }
-
-  .professional-navy {
-    color: var(--professional-navy);
-  }
-
-  .professional-gray {
-    color: var(--professional-gray);
-  }
-  
-  .professional-red {
-    color: var(--professional-red);
+  .cyber-purple {
+    color: var(--cyber-purple);
   }
 
   .success-green {
     color: var(--success-green);
   }
 
-  .accent-gold {
-    color: var(--accent-gold);
+  .error-red {
+    color: var(--error-red);
   }
 
   .skill-bar {
@@ -113,30 +99,17 @@
   .typing-cursor::after {
     content: '|';
     animation: blink 1s infinite;
-    color: var(--professional-blue);
-  }
-
-  .professional-card {
-    @apply bg-card border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
-  }
-
-  .professional-button {
-    @apply bg-primary text-primary-foreground px-6 py-2 rounded-md font-medium transition-colors duration-200;
-  }
-  
-  .professional-button:hover {
-    @apply bg-blue-600;
   }
 }
 
 @layer utilities {
-  .animate-professional-gradient {
-    animation: subtle-gradient 20s ease infinite;
+  .animate-gradient {
+    animation: gradient 15s ease infinite;
   }
 
   .animate-typing {
     overflow: hidden;
-    border-right: 2px solid var(--professional-blue);
+    border-right: 2px solid var(--cyber-blue);
     white-space: nowrap;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
@@ -154,7 +127,7 @@
   }
 }
 
-@keyframes subtle-gradient {
+@keyframes gradient {
   0%, 100% {
     background-position: 0% 50%;
   }
@@ -177,7 +150,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: var(--professional-blue);
+    border-color: var(--cyber-blue);
   }
 }
 
@@ -210,20 +183,20 @@
   }
 }
 
-/* Professional scrollbar */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--muted);
+  background: hsl(240, 10%, 3.9%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--professional-blue);
+  background: var(--cyber-blue);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--professional-navy);
+  background: hsl(197, 100%, 40%);
 }
