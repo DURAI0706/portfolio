@@ -57,8 +57,8 @@ export default function SocialFeedSection() {
   return (
     <section className="relative z-10 py-20 px-6 bg-[hsl(210,100%,95%)/0.1]">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-mono font-bold text-center mb-16 bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">
-          Latest <span>Updates</span>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
+          Latest <span className="professional-blue">Updates</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
